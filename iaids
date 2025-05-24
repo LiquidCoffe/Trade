@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Curso de Day Trade</title>
+<!-- Fonte moderna -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+  * {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f8;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .container {
+    flex:1;
+    max-width:1200px;
+    margin:0 auto;
+    padding:40px 20px;
+  }
+  header {
+    text-align:center;
+    margin-bottom:40px;
+  }
+  h1 {
+    font-size:2.8em;
+    color:#003366;
+    margin-bottom:16px;
+  }
+  p.description {
+    font-size:1.2em;
+    color:#555;
+    max-width:700px;
+    margin:0 auto 30px auto;
+    line-height:1.5;
+  }
+  .video-wrapper {
+    position: relative;
+    padding-bottom:56.25%;
+    height:0;
+    overflow:hidden;
+    max-width:100%;
+    margin:0 auto 40px auto;
+  }
+  .video-wrapper iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  .cta-button {
+    display:inline-block;
+    background-color:#007bff;
+    color:#fff;
+    font-size:1.3em;
+    padding:20px 40px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    transition:background-color 0.3s, transform 0.2s;
+  }
+  .cta-button:hover {
+    background-color:#0056b3;
+    transform:translateY(-2px);
+  }
+  .illustrations {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:30px;
+  }
+  .illustration {
+    flex:1 1 150px;
+    max-width:200px;
+  }
+  footer {
+    text-align:center;
+    padding:20px;
+    background:#e0e0e0;
+    font-size:0.9em;
+    color:#555;
+  }
+  @media(max-width:768px){
+    h1 { font-size:2em; }
+    .cta-button { font-size:1.2em; padding:15px 30px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Ilustrações vetoriais (pode trocar por SVGs ou imagens externas) -->
+  <header>
+    <div class="illustrations">
+      <div class="illustration">
+        <!-- Exemplo de gráfico -->
+        <svg width="100" height="100" viewBox="0 0 24 24" fill="#003366" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 17H5V7H3V17ZM9 13H11V7H9V13ZM15 19H17V3H15V19Z"/>
+        </svg>
+      </div>
+      <div class="illustration">
+        <!-- Dinheiro -->
+        <svg width="100" height="100" viewBox="0 0 24 24" fill="#007bff" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zm0 20c-4.963 0-9-4.037-9-9s4.037-9 9-9 9 4.037 9 9-4.037 9-9 9zm1-13h-2v2h2V8zm-2 4h2v6h-2v-6z"/>
+        </svg>
+      </div>
+      <div class="illustration">
+        <!-- Tela de operação -->
+        <svg width="100" height="100" viewBox="0 0 24 24" fill="#28a745" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 2h8v2H8V8zm0 4h8v2H8v-2zm0 4h5v2H8v-2z"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- Título impactante -->
+  <h1>Descubra como começar no Day Trade do zero</h1>
+  <!-- Descrição -->
+  <p class="description">
+    Assista a esse vídeo exclusivo e entenda os primeiros passos para operar no mercado financeiro com segurança e estratégia.
+  </p>
+  
+  <!-- Vídeo embed sem controles visíveis -->
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/vy2vEvnHOzU?autoplay=1&controls=0&rel=0" allow="autoplay" allowfullscreen title="Intro ao Day Trade"></iframe>
+  </div>
+  
+  <!-- Botão de ação -->
+  <div style="text-align:center;">
+    <a href="#" class="cta-button">Quero fazer parte do curso completo!</a>
+  </div>
+
+</div>
+
+<!-- Rodapé -->
+<footer>
+  &copy; 2024 SeuNome. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
