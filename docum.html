@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriggerMaster - Gatilhos de Trade Profissionais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
+        }
+        .trigger-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-chart-line text-2xl"></i>
+                    <h1 class="text-2xl font-bold">TriggerMaster</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-blue-200 transition">Home</a>
+                    <a href="#" class="hover:text-blue-200 transition">Gatilhos</a>
+                    <a href="#" class="hover:text-blue-200 transition">Day Trade</a>
+                    <a href="#" class="hover:text-blue-200 transition">Cursos</a>
+                    <a href="#" class="hover:text-blue-200 transition">Contato</a>
+                </nav>
+                <button class="md:hidden text-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Domine o Mercado com Gatilhos Precisos</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Aprenda os gatilhos de entrada e saída que os profissionais usam para maximizar lucros e minimizar riscos.</p>
+            <div class="flex justify-center space-x-4">
+                <button class="bg-white text-blue-800 px-6 py-3 rounded-full font-bold hover:bg-blue-100 transition pulse-animation">
+                    <i class="fas fa-play mr-2"></i> Assista o Vídeo
+                </button>
+                <button class="border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-blue-800 transition">
+                    <i class="fas fa-book mr-2"></i> Aprenda Agora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Triggers Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Gatilhos de Trade Mais Eficazes</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Trigger 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md trigger-card transition">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-arrow-up text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Rompimento de Resistência</h3>
+                    <p class="text-gray-600 mb-4">Identifique quando o preço rompe uma resistência histórica com volume crescente, sinalizando continuação da tendência.</p>
+                    <div class="flex items-center text-blue-600 font-medium">
+                        <span>Ver Detalhes</span>
+                        <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                    </div>
+                </div>
+                
+                <!-- Trigger 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md trigger-card transition">
+                    <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-retweet text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Pullback em Média Móvel</h3>
+                    <p class="text-gray-600 mb-4">Entrada quando o preço retorna à média móvel principal em uma tendência forte, com confirmação de candle de reversão.</p>
+                    <div class="flex items-center text-green-600 font-medium">
+                        <span>Ver Detalhes</span>
+                        <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                    </div>
+                </div>
+                
+                <!-- Trigger 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md trigger-card transition">
+                    <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Divergência de RSI</h3>
+                    <p class="text-gray-600 mb-4">Alerta para possíveis reversões quando o RSI mostra divergência com o movimento de preço em timeframes superiores.</p>
+                    <div class="flex items-center text-purple-600 font-medium">
+                        <span>Ver Detalhes</span>
+                        <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Aula Exclusiva: Gatilhos para Day Trade</h2>
+                <p class="text-gray-600">Assista esta aula completa onde revelamos os gatilhos mais poderosos usados pelos traders profissionais no mercado brasileiro.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-xl">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/vy2vEvnHOzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="bg-white p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Gatilhos de Alta Probabilidade</h3>
+                    <p class="text-gray-600 mb-4">Neste vídeo você vai aprender 3 gatilhos infalíveis para entrar no mercado com a favor da tendência e maximizar seus resultados.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-clock text-gray-400"></i>
+                            <span class="text-gray-500">22:34 min</span>
+                        </div>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                            <i class="fas fa-download mr-2"></i> Baixar Material
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Day Trade Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Estratégias de Day Trade com Gatilhos Precisos</h2>
+                    <p class="text-gray-600 mb-6">Aprenda a identificar os melhores momentos para entrar e sair do mercado durante a sessão, usando gatilhos baseados em price action, volume e indicadores técnicos.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Gatilho de Abertura</h4>
+                                <p class="text-gray-600">Identifique a direção do mercado nos primeiros 30 minutos e entre com a tendência.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Gatilho de Fechamento</h4>
+                                <p class="text-gray-600">Saiba quando sair de uma operação para proteger seu capital ou garantir lucros.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Gerenciamento de Risco</h4>
+                                <p class="text-gray-600">Defina stops e targets baseados na volatilidade do ativo e no tamanho da sua posição.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-100 p-6 rounded-xl border border-gray-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Simulador de Gatilhos</h3>
+                        <p class="text-gray-600 mb-6">Teste seus conhecimentos sobre gatilhos de trade com nosso simulador interativo:</p>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-600">Cenário:</span>
+                                <span class="font-medium">Romper resistência com volume</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-blue-600 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <input type="radio" id="trigger1" name="trigger" class="mr-2">
+                                <label for="trigger1" class="text-gray-700">Entrar na retestagem</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="trigger2" name="trigger" class="mr-2">
+                                <label for="trigger2" class="text-gray-700">Entrar no rompimento</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="trigger3" name="trigger" class="mr-2">
+                                <label for="trigger3" class="text-gray-700">Aguardar confirmação</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="trigger4" name="trigger" class="mr-2">
+                                <label for="trigger4" class="text-gray-700">Não operar</label>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full bg-blue-600 text-white py-3 rounded-lg mt-6 hover:bg-blue-700 transition">
+                            Verificar Resposta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Pronto para Transformar Seus Trades?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Cadastre-se agora e receba nosso ebook exclusivo "10 Gatilhos de Trade que Todo Profissional Usa"</p>
+            
+            <form class="max-w-md mx-auto">
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <input type="email" placeholder="Seu melhor e-mail" class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none">
+                    <button type="submit" class="bg-white text-blue-800 px-6 py-3 rounded-lg font-bold hover:bg-blue-100 transition">
+                        <i class="fas fa-envelope mr-2"></i> Receber Ebook
+                    </button>
+                </div>
+            </form>
+            
+            <div class="flex justify-center mt-8 space-x-6">
+                <a href="#" class="text-white hover:text-blue-200 text-2xl">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="text-white hover:text-blue-200 text-2xl">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="#" class="text-white hover:text-blue-200 text-2xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-white hover:text-blue-200 text-2xl">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-chart-line mr-2"></i> TriggerMaster
+                    </h3>
+                    <p class="text-gray-400">A plataforma definitiva para traders que querem dominar o mercado com gatilhos precisos e estratégias testadas.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Gatilhos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Price Action</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Volume</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Indicadores</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Padrões Gráficos</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Day Trade</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Estratégias</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Gerenciamento</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Psicologia</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Simulador</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">contato@triggermaster.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">(11) 99999-9999</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">São Paulo - SP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>© 2023 TriggerMaster. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.md\\:hidden').addEventListener('click', function() {
+            // Implement mobile menu toggle functionality here
+            alert('Menu mobile será implementado aqui!');
+        });
+
+        // Simulate form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Obrigado por se cadastrar! O ebook será enviado para o e-mail fornecido.');
+            this.reset();
+        });
+
+        // Simulate trigger selection
+        document.querySelectorAll('input[name="trigger"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                if(this.checked) {
+                    console.log('Gatilho selecionado:', this.nextElementSibling.textContent);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
